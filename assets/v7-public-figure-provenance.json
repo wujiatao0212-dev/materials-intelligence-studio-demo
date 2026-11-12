@@ -12,7 +12,7 @@
   "field": "Si temperature",
   "unit": "K",
   "figures": {
-    "v7-silicon-surface-clean.png": "fb44d3561006a5d3da73f5bf015b9c11a8b7d993e4b4de719ec3caf210c9bf37",
+    "v7-silicon-surface-clean.png": "a5fbdf5d0425cfcd6cc3bf992e528f5dc5bcbe14ba7363a5a81fa5e2f86743c7",
     "v7-silicon-slice-clean.png": "15bc1ba4322b89314d4a82edc3e8f9c22576c0ef4c32124e3741fd76d141968d"
   },
   "not_new_comsol_solves": true,

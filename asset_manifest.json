@@ -16,6 +16,11 @@
       "source_sha256": "292dfeed95a5f8f1c013ad7171ec0f4b3758fdf46c23c9ad1085a648867c3759",
       "sha256": "292dfeed95a5f8f1c013ad7171ec0f4b3758fdf46c23c9ad1085a648867c3759"
     },
+    "assets/v7-matlab-figure3a-comparison.png": {
+      "source": "simulations/mos2_electrothermal_v7_benchmark/outputs/matlab_comparison_final/figure3a_reduced_reproduction.png",
+      "source_sha256": "9fd5efeea81b132ffa0ecd9e30be382270794c634dcb0c6b43023c74507ca55b",
+      "sha256": "9fd5efeea81b132ffa0ecd9e30be382270794c634dcb0c6b43023c74507ca55b"
+    },
     "assets/battery-solver-comparison.png": {
       "source": "reports/studio_v3_2/solver_comparison.png",
       "source_sha256": "256a5f3665b8bb2813d3326881cfd80899e08f72607dabef4be3051d186d08f1",
