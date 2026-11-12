@@ -1,0 +1,36 @@
+{
+  "classification": "display-only views of verified saved COMSOL V7 Si field",
+  "source_scene_manifest_sha256": "1c1a9f69dbc3932ea8167620b56e88f780221a14113c17bc1c247a95c41eb6c8",
+  "source_vtu_sha256": "039152306827d13cf45df3b77566d489cf3fe557a40b245dfb977edf9543949e",
+  "source_scene_files": {
+    "surface.json": "e1201493fa74f58b0be5b6a5410c6eab7b27c6da0a2910c705b689049140b93f",
+    "slice_z_1.json": "981a44fefeaba0dfe297b25ab2cfa14f864736212b2b8ebc6000d1871b6a06e7",
+    "slice_z_5.json": "9a8a3efeffe6e67ad057e1867b3b55968f86f3151cafc5fb5b3bdd1f1aaa19b2",
+    "slice_z_20.json": "da024e7a55420206d701dffc8ac6068bae5cd43192ab667441f1e58729ed58ed",
+    "isotherm_301.json": "fb5636dad2eb3de39f583b28ed03ce0f0e07d934534962c0b330e16c8692c5df"
+  },
+  "field": "Si temperature",
+  "unit": "K",
+  "figures": {
+    "v7-silicon-surface-clean.png": "fb44d3561006a5d3da73f5bf015b9c11a8b7d993e4b4de719ec3caf210c9bf37",
+    "v7-silicon-slice-clean.png": "15bc1ba4322b89314d4a82edc3e8f9c22576c0ef4c32124e3741fd76d141968d"
+  },
+  "not_new_comsol_solves": true,
+  "public_display_extracts": {
+    "surface.json": "e1201493fa74f58b0be5b6a5410c6eab7b27c6da0a2910c705b689049140b93f",
+    "slice_z_1.json": "981a44fefeaba0dfe297b25ab2cfa14f864736212b2b8ebc6000d1871b6a06e7",
+    "slice_z_5.json": "9a8a3efeffe6e67ad057e1867b3b55968f86f3151cafc5fb5b3bdd1f1aaa19b2",
+    "slice_z_20.json": "da024e7a55420206d701dffc8ac6068bae5cd43192ab667441f1e58729ed58ed",
+    "isotherm_301.json": "fb5636dad2eb3de39f583b28ed03ce0f0e07d934534962c0b330e16c8692c5df"
+  },
+  "battery_tutorial_figures": {
+    "battery-voltage-soc-clean.png": {
+      "source_sha256": "0ef1a23cd211fb84aff7ce00d45236c438f7265fb87b6f31632fb34f80694381",
+      "public_sha256": "0ef1a23cd211fb84aff7ce00d45236c438f7265fb87b6f31632fb34f80694381"
+    },
+    "battery-current-charge-clean.png": {
+      "source_sha256": "627644deb02466658c222de879f1868ebd9d958224c1e1d4be21dc898d670bac",
+      "public_sha256": "627644deb02466658c222de879f1868ebd9d958224c1e1d4be21dc898d670bac"
+    }
+  }
+}

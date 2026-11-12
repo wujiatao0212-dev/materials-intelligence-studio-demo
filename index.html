@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A guided, source-aware tour of Materials Intelligence Studio, with real saved figures and bounded browser calculations.">
+  <meta name="theme-color" content="#081321">
+  <title>Materials Intelligence Studio | Guided research tour</title>
+  <link rel="stylesheet" href="style.css?v=20261112">
+  <script defer src="plotly.min.js"></script>
+  <script defer src="app.js?v=20261112b"></script>
+  <script defer src="viewer.js?v=20261112b"></script>
+</head>
+<body>
+  <a class="skip" href="#tour">Skip to guided tour</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">MI</span><span>Materials<br>Intelligence Studio</span></a>
+    <nav aria-label="Main navigation"><a href="#tour">Guided tour</a><a href="#model-story">Model construction</a><a href="#viewer">Interactive 3D</a><a href="#results-atlas">Real results</a><a href="#method">Methods</a></nav>
+    <span class="public-badge"><span class="pulse"></span>PUBLIC RESEARCH TOUR</span>
+  </header>
+  <main>
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SOURCE-AWARE RESEARCH WORKFLOWS <span>/</span> PROFESSOR DEMO</p>
+        <h1>Follow the evidence.<br><em>Then see the result.</em></h1>
+        <p class="hero-lead">An interactive walkthrough of the actual Studio workflow: choose a reference case, inspect the parameter evidence, run a bounded calculation, and read the saved solver results with their limits attached.</p>
+        <div class="hero-actions"><a class="button primary" href="#tour">Start guided tour <span>↗</span></a><a class="button secondary" href="#results-atlas">Explore verified images</a></div>
+        <p class="hero-boundary">This public tour uses browser calculations and previously saved research outputs. Licensed COMSOL and MATLAB execution remains in the local Studio.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/v7-silicon-surface-clean.png" alt="Complete exterior-surface rendering of the solved three-dimensional silicon temperature field">
+        <div class="visual-label"><span class="pulse"></span> GENUINE COMSOL FIELD <strong>3D Si temperature</strong><small>V7 saved solution · complete field rendering</small></div>
+      </div>
+    </section>
+    <section class="signal-strip" aria-label="Project evidence at a glance">
+      <div><strong>16,905</strong><span>source-native C2DB records<br>kept private</span></div>
+      <div><strong>336.908 K</strong><span>saved MoS₂ V5 model peak<br>illustrative conditions</span></div>
+      <div><strong>801</strong><span>saved battery tutorial<br>solver time points</span></div>
+      <div><strong>35</strong><span>Materials Project screening<br>records across six systems</span></div>
+    </section>
+    <section id="tour" class="section tour-section">
+      <div class="section-heading"><div><p class="kicker">01 — INTERACTIVE STUDIO TOUR</p><h2>One case, five deliberate steps</h2></div><p>Each step produces an inspectable artifact. A generated browser calculation is labelled separately from a saved COMSOL/MATLAB result.</p></div>
+      <div class="tour-shell">
+        <aside class="tour-rail" aria-label="Guided workflow steps">
+          <div class="rail-title">WORKFLOW NAVIGATOR</div>
+          <div id="step-nav" class="step-nav"></div>
+          <div class="rail-note"><span class="status-chip">SOURCE-LED</span><p>Computed properties, numerical verification and independent experimental validation are separate claims.</p></div>
+        </aside>
+        <div class="workbench">
+          <div class="workbench-top"><span id="step-kicker" class="kicker"></span><span id="case-tag" class="status-chip"></span></div>
+          <div id="step-content" aria-live="polite"></div>
+          <div class="tour-controls"><button id="previous-step" type="button" class="button secondary">← Previous</button><span id="step-count"></span><button id="next-step" type="button" class="button primary">Continue →</button></div>
+        </div>
+      </div>
+    </section>
+    <section id="results-atlas" class="section">
+      <div class="section-heading"><div><p class="kicker">02 — SOURCE-LINKED RESULT ATLAS</p><h2>Look inside the actual work</h2></div><p>Select a panel to see the original figure, its evidence source, and the exact limit on its interpretation.</p></div>
+      <div class="atlas-feature">
+        <button class="atlas-main" type="button" data-figure="2" aria-label="Inspect the genuine V7 silicon field"><img src="assets/v7-silicon-slice-clean.png" alt="Complete cross-section of solved V7 silicon temperature"><span><small>COMSOL 6.0 · VERIFIED 3D EXPORT</small><strong>A solved field with a complete scale.</strong></span></button>
+        <div class="atlas-side">
+          <button type="button" data-figure="4"><img src="assets/battery-solver-comparison.png" alt="Saved LG M50 COMSOL and PyBaMM voltage comparison"><span>LG M50 <strong>3.926163 mV</strong> maximum solver difference</span></button>
+          <button type="button" data-figure="0"><img src="assets/v2-matlab-comsol-profile.png" alt="Saved MoS2 reduced thermal verification plot"><span>MoS₂ V2 <strong>Analytical · MATLAB · COMSOL</strong> reduced-model check</span></button>
+        </div>
+      </div>
+      <div id="gallery" class="gallery" aria-label="More research figures"></div>
+    </section>
+    <section id="model-story" class="section model-story">
+      <div class="section-heading"><div><p class="kicker">03 — MODEL CONSTRUCTION AND ANALYSIS</p><h2>See how the answer is made</h2></div><p>Two separate reference workflows show geometry, physics, execution, numerical outputs and MATLAB's precise role.</p></div>
+      <div class="story-grid">
+        <article class="story-card"><div class="story-head"><span>MoS₂ / ELECTROTHERMAL</span><strong>COMSOL V7 reduced 3D silicon subproblem</strong></div>
+          <div class="layer-diagram" aria-label="Conceptual film, oxide, and solved silicon stack"><div class="layer film">MoS₂ film · algebraic mean temperature drop</div><div class="layer oxide">SiO₂ · algebraic mean temperature drop</div><div class="layer silicon">Si · actual 3D COMSOL heat solve<br><small>40 × 40 × 40 µm substrate · 4 × 5 µm heater</small></div></div>
+          <ol><li><b>Define geometry and load.</b> Centered heater, 10 mW total; five exterior faces at 293.15 K.</li><li><b>Solve silicon conduction.</b> Saved COMSOL field gives 10.3992 K Si temperature rise.</li><li><b>Account for interfaces.</b> Oxide and boundary drops are 32.1429 K and 35.7143 K from declared algebraic assumptions.</li><li><b>Analyse in MATLAB.</b> Use the saved field and compare the reduced response with five digitised Yalon Figure 3a points.</li></ol>
+          <p class="story-limit">The film and oxide are not solved as 3D fields. The publication also informed fitting; this comparison is not independent experimental validation.</p></article>
+        <article class="story-card"><div class="story-head"><span>LITHIUM-ION / ELECTROCHEMICAL</span><strong>COMSOL 6.0 official 1D tutorial</strong></div>
+          <div class="cell-diagram" aria-label="Battery one-dimensional model layers"><div>Carbon negative<br><small>100 µm</small></div><div>Separator<br><small>52 µm</small></div><div>LiMn₂O₄ positive<br><small>174 µm</small></div></div>
+          <ol><li><b>Build source model.</b> Lithium-ion Battery interface couples charge conduction, species transport, particle diffusion and electrode kinetics.</li><li><b>Apply current.</b> 17.5 A/m² discharge 0–2000 s; rest 2000–2300 s; reverse current 2300–4300 s; rest to 8000 s.</li><li><b>Solve and export.</b> The saved COMSOL solution has 801 time points, terminal voltage and electrode-average charge states.</li><li><b>Check in MATLAB.</b> Independently integrate prescribed current and verify 35,000 C/m² discharge and zero net external charge over the cycle.</li></ol>
+          <p class="story-limit">MATLAB charge fraction and COMSOL electrode-average SOC have different definitions. The browser slider does not re-solve battery voltage.</p></article>
+      </div>
+      <div class="story-figures"><figure><img src="assets/v7-silicon-slice-clean.png" alt="Complete V7 silicon temperature slice with axes and scale"><figcaption>COMSOL V7: complete silicon-temperature section from the verified field.</figcaption></figure><figure><img src="assets/battery-voltage-soc-clean.png" alt="Complete COMSOL battery terminal voltage and charge-state figure"><figcaption>COMSOL battery tutorial: solved terminal voltage and distinct charge-state definitions.</figcaption></figure><figure><img src="assets/battery-current-charge-clean.png" alt="Complete battery applied current and MATLAB integrated-charge figure"><figcaption>MATLAB charge accounting: current schedule and integrated areal charge.</figcaption></figure></div>
+    </section>
+    <section id="viewer" class="section viewer-section">
+      <div class="section-heading"><div><p class="kicker">04 — MOVE THE REAL SOLVED FIELD</p><h2>Rotate the COMSOL temperature field</h2></div><p>Drag to rotate, scroll to zoom, and select a saved section. These are display views of one verified V7 COMSOL solution; choosing a section does not rerun physics.</p></div>
+      <div class="viewer-shell"><div id="v7-plot" role="img" aria-label="Interactive three-dimensional solved silicon temperature field"></div><div class="viewer-controls"><label for="scene-select">Saved field view</label><select id="scene-select"><option value="surface">Exterior surface</option><option value="slice_z_1">Section z = −1 µm</option><option value="slice_z_5">Section z = −5 µm</option><option value="slice_z_20">Section z = −20 µm</option><option value="isotherm_301">301 K isosurface</option></select><p id="scene-status" role="status">Loading verified field…</p><dl><div><dt>Source</dt><dd>COMSOL V7 saved VTU</dd></div><div><dt>Field</dt><dd>Silicon temperature, K</dd></div><div><dt>Range</dt><dd>293.15–305.509 K</dd></div></dl><p class="viewer-note">The full private VTU/MPH stays off this site. The viewer uses a derived geometry-and-temperature display extract, hash-linked to the archived source. No unpublished experimental or C2DB records are included.</p><a class="button secondary" href="assets/v7-public-figure-provenance.json">View source hash manifest</a></div></div>
+    </section>
+    <section id="method" class="section method-section">
+      <div class="section-heading"><div><p class="kicker">05 — HOW THE PRIVATE STUDIO REALLY RUNS</p><h2>From material record to report</h2></div><p>The public tour above mirrors the decision sequence. The full local application handles licensed software and private files on the research workstation.</p></div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Source evidence</h3><p>Inspect method-labelled C2DB/Materials Project information. A source record alone supplies no thermal or battery transport coefficients.</p></article>
+        <article><span>02</span><h3>Parameter gate</h3><p>Select a versioned reference and review geometry, boundary assumptions, sources and missing specimen-specific inputs.</p></article>
+        <article><span>03</span><h3>Controlled execution</h3><p>The battery tutorial is newly solved by COMSOL and analysed in MATLAB. The MoS₂ V5 case verifies and reuses a saved MPH, then runs MATLAB analysis.</p></article>
+        <article><span>04</span><h3>Auditable output</h3><p>Read the manifest, numerical figures, original result files and claim-status report. An LG M50 production run remains blocked.</p></article>
+      </div>
+      <div class="studio-window"><div class="studio-window-bar"><span class="window-dots">● ● ●</span><span>REAL LOCAL STUDIO · SCREEN CAPTURE</span></div><img src="assets/studio-workflows.jpg" alt="Actual Studio workflow choice screen"></div>
+      <div class="method-links"><a class="button secondary" href="downloads/Studio_Simulation_User_Guide.md">Read the full local-use tutorial →</a><a class="button secondary" href="downloads/Reproducibility_Appendix.pdf">Open reproducibility appendix →</a></div>
+    </section>
+  </main>
+  <dialog id="figure-dialog"><div class="dialog-toolbar"><span>Complete source figure · scroll to inspect at full size</span><button id="figure-zoom-out" type="button">−</button><button id="figure-zoom-in" type="button">+</button><button class="dialog-close" type="button" aria-label="Close figure">×</button></div><div class="dialog-image-scroll"><img id="dialog-image" alt=""></div><div id="dialog-copy"></div></dialog>
+  <footer><span>Materials Intelligence Studio · Guided research tour</span><span>Public aggregate evidence · source facts, calculations and validation kept distinct</span></footer>
+</body>
+</html>

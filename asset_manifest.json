@@ -1,0 +1,75 @@
+{
+  "classification": "public aggregate and existing figure evidence only",
+  "files": {
+    "assets/v2-matlab-comsol-profile.png": {
+      "source": "simulations/mos2_electrothermal_v2/outputs/comsol_mcp_v2_20261020T210008Z/matlab_comsol_profile.png",
+      "source_sha256": "966aa9bda76d50893b77e1daf8f67785f7e87c524c45c8d68a12d4adad38d7ac",
+      "sha256": "966aa9bda76d50893b77e1daf8f67785f7e87c524c45c8d68a12d4adad38d7ac"
+    },
+    "assets/v5-thermal-evidence.png": {
+      "source": "simulations/mos2_electrothermal_v5_physical_parameters/outputs/ofat_20261022T210052Z/figure2_thermal_evidence.png",
+      "source_sha256": "be86fa69c32f1b426ec57452f9f927087f1c69cb32a3ee4c4c166eb05b330560",
+      "sha256": "be86fa69c32f1b426ec57452f9f927087f1c69cb32a3ee4c4c166eb05b330560"
+    },
+    "assets/yalon-five-point-audit.png": {
+      "source": "reports/post_v7/yalon_five_point_audit.png",
+      "source_sha256": "292dfeed95a5f8f1c013ad7171ec0f4b3758fdf46c23c9ad1085a648867c3759",
+      "sha256": "292dfeed95a5f8f1c013ad7171ec0f4b3758fdf46c23c9ad1085a648867c3759"
+    },
+    "assets/battery-solver-comparison.png": {
+      "source": "reports/studio_v3_2/solver_comparison.png",
+      "source_sha256": "256a5f3665b8bb2813d3326881cfd80899e08f72607dabef4be3051d186d08f1",
+      "sha256": "256a5f3665b8bb2813d3326881cfd80899e08f72607dabef4be3051d186d08f1"
+    },
+    "assets/battery-lithium-inventory.png": {
+      "source": "reports/studio_v3_3/matlab_v2/lithium_inventory.png",
+      "source_sha256": "7e8661c3052f82c74e9068e6f06c477d930df90535a5a124e793e226ac465c65",
+      "sha256": "7e8661c3052f82c74e9068e6f06c477d930df90535a5a124e793e226ac465c65"
+    },
+    "assets/ocp-residual-intervention.png": {
+      "source": "reports/studio_v3_4/matlab/terminal_residual_before_after.png",
+      "source_sha256": "fa4a297c60e6a1ef6a70ebee4c6fdf8e8160debda0f69b661e4667bbf0577fc9",
+      "sha256": "fa4a297c60e6a1ef6a70ebee4c6fdf8e8160debda0f69b661e4667bbf0577fc9"
+    },
+    "assets/ocp-correction-discharge.png": {
+      "source": "reports/studio_v3_4/matlab/ocp_correction_over_discharge.png",
+      "source_sha256": "61d3c11ac6067bdb45d7ba955019bc9d8394176b96848a5d3347f35d05200a7b",
+      "sha256": "61d3c11ac6067bdb45d7ba955019bc9d8394176b96848a5d3347f35d05200a7b"
+    },
+    "assets/pinn-profile.png": {
+      "source": "reports/physics_ai/pinn_v1_profile.png",
+      "source_sha256": "5e1ad329f8920fad0b22ba2c849091812a969d90fb2eba832c37ece2540edfb7",
+      "sha256": "5e1ad329f8920fad0b22ba2c849091812a969d90fb2eba832c37ece2540edfb7"
+    },
+    "assets/studio-workflows.jpg": {
+      "source": "reports/studio/screenshots/studio_workflows.jpg",
+      "source_sha256": "812d7826bd8c597aec7c0f178feb79fdd1665e3cd8bd27d70373a5706c63de24",
+      "sha256": "812d7826bd8c597aec7c0f178feb79fdd1665e3cd8bd27d70373a5706c63de24"
+    },
+    "assets/studio-battery-report.jpg": {
+      "source": "reports/studio/screenshots/battery_report.jpg",
+      "source_sha256": "41734bd21b735db6a430b0c77c430793353ba34f3beb2cc3626b2af85d80d6c7",
+      "sha256": "41734bd21b735db6a430b0c77c430793353ba34f3beb2cc3626b2af85d80d6c7"
+    },
+    "downloads/Materials_Intelligence_Studio_Research_Overview.pdf": {
+      "source": "portfolio/david_lewis/Materials_Intelligence_Studio_Research_Overview.pdf",
+      "source_sha256": "688b0e04b602bfbc77b9daa8665913d7f3d2b9e2e67aa1808582da13521446ff",
+      "sha256": "688b0e04b602bfbc77b9daa8665913d7f3d2b9e2e67aa1808582da13521446ff"
+    },
+    "downloads/Selected_Scientific_Results.pdf": {
+      "source": "portfolio/david_lewis/Selected_Scientific_Results.pdf",
+      "source_sha256": "b193eaf96563f7739fa5f23833d07a3ab0598686c8540d4dad0a0bbfa6497ed4",
+      "sha256": "b193eaf96563f7739fa5f23833d07a3ab0598686c8540d4dad0a0bbfa6497ed4"
+    },
+    "downloads/Reproducibility_Appendix.pdf": {
+      "source": "portfolio/david_lewis/Reproducibility_Appendix.pdf",
+      "source_sha256": "d2cfff38f00a8eb6252fa410ef7ea64d2a944451c9ace823a5f0d0e76e886b30",
+      "sha256": "d2cfff38f00a8eb6252fa410ef7ea64d2a944451c9ace823a5f0d0e76e886b30"
+    },
+    "downloads/Studio_Simulation_User_Guide.md": {
+      "source": "docs/studio_simulation_user_guide.md",
+      "source_sha256": "e120bb52d1c74b8917073cd7cc599ab8ca51eb2aecab6a06f4e382fac31156b8",
+      "sha256": "1d26bdfc2b42692c6a23b7c12978ce197e9a5dd7624cd3430b02d05a1846f6ea"
+    }
+  }
+}
